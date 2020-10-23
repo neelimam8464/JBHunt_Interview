@@ -1,0 +1,12 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card{
+    width: 300px;
+}
+

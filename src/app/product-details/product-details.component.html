@@ -1,0 +1,31 @@
+<p>product-details works!</p>
+<div class="wrapper">
+
+
+
+    <div class="card p-5" *ngIf="product">
+        <a href="/products">All Products </a>
+        <p>Name: {{product.name}} </p>
+        <p>Price: {{product.price}} </p>
+        <p></p>
+        <form [formGroup]="productForm">
+            <div class="form-group">
+                <input class="form-control" formControlName="quantity" type="number" placeholder="Quantity">
+            </div>
+            <div class="form-group">
+                <input class="form-control" formControlName="zipCode" type="number" placeholder="Zip Code">
+            </div>
+            <div class="form-group" *ngFor="let field of product.customFields">
+                <div *ngIf="field.fieldName">
+                <input class="form-control" type="text" formControlName="{{field.fieldName}}" placeholder="{{field.label}}">
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <button class="btn btn-primary" (click)="addCart()"> Add to cart </button>
+            </div>
+
+        </form>
+    </div>
+
+
+</div>

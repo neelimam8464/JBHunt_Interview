@@ -1,0 +1,11 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    min-width: 50%;
+    background-color:bisque;
+}

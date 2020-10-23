@@ -1,0 +1,18 @@
+<p>products works!</p>
+<div class="wrapper">
+    
+
+    <div class="card text-center" *ngFor="let product of products">
+        <p>Type: {{product.productType}} </p>
+        <p>Name: {{product.name}} </p>
+        <p>Price: {{product.price}} </p>
+        <!-- <div *ngIf="product.customFields.length!=0">
+        <p *ngFor="let field of product.customFields">
+            <span> {{field.label}}</span>
+            <span> {{field. fieldName}} </span>
+        </p>
+        </div> -->
+        <button class="btn btn-primary" (click)="openProductDetails(product.id)" > View Product </button>
+    </div>
+
+</div>

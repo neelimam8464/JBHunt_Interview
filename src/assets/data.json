@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "productType": 1,
+      "name": "Sneaker",
+      "price": 5.5,
+      "customFields": []
+    },
+    {
+      "id": 2,
+      "productType": 1,
+      "name": "Boot",
+      "price": 5.5,
+      "customFields": []
+    },
+    {
+      "id": 3,
+      "productType": 2,
+      "name": "Family Vacation",
+      "price": 1,
+      "customFields": [
+        { "label": "Family Name", "fieldName": "family" }
+      ]
+    },
+    {
+      "id": 4,
+      "productType": 2,
+      "name": "League Champion",
+      "price": 1.23,
+      "customFields": [
+        { "label": "League Name", "fieldName": "leauge" },
+        { "label": "Team Name", "fieldName": "team" }
+      ]
+    }
+  ]
+  
